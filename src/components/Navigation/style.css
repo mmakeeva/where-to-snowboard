@@ -1,0 +1,28 @@
+.navigation__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-height: 100px;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .navigation__container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .navigation__container {
+        gap: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .navigation__container {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,11 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .home {
+        row-gap: 30px;
+    }
+}

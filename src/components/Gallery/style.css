@@ -1,0 +1,38 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.gallery__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    column-gap: 10px;
+}
+
+.buttonPng {
+    width: 30px;
+    height: 30px;
+}
+
+.showBrandsButton {
+    display: none;
+    width: 200px;
+    align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+    .gallery__container {
+        display: none;
+    }
+
+    .showBrandsButton {
+        display: block;
+    }
+}
+
+.showGallery {
+    display: flex;
+}
