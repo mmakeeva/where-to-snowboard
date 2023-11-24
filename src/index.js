@@ -13,8 +13,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store";
 
-import "./null.css";
-import "./index.css";
+import "./styles/null.css";
+import "./styles/index.css";
 
 // Импорт компонентов
 import Header from "./components/Header";

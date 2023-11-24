@@ -29,12 +29,17 @@
     .resorts__filter {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
+        row-gap: 10px;
     }
 }
 
 @media screen and (max-width: 391px) {
+    .about__content {
+        font-size: 1em;
+        gap: 10px;
+    }
     .resorts__filter {
-        display: flex;
-        flex-direction: column;
+        font-size: 0.8em;
+        margin-top: 10px;
     }
 }

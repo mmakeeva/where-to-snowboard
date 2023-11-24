@@ -214,12 +214,10 @@ const About = ({ resortsArray }) => {
                             ))}
                         </ul>
                     </div>
-                    <div className="resorts__content">
-                        <GalleryImages
-                            images={resorts.currentResorts}
-                            extraClass="galleryImages_wrap"
-                        />
-                    </div>
+                    <GalleryImages
+                        images={resorts.currentResorts}
+                        extraClass="galleryImages_wrap"
+                    />
                 </div>
             </div>
         </div>
