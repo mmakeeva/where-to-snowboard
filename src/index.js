@@ -315,7 +315,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <StrictMode>
-        <Router basename="/where-to-snowboard">
+        <Router>
             <Provider store={store}>
                 <WhereToSnowboard />
             </Provider>
