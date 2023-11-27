@@ -5,8 +5,6 @@ import { useGeolocated } from "react-geolocated";
 
 import mountainImg from "../../assets/img/icons/mountain.jpeg";
 
-const API_KEY = "c538921f-499f-4414-b9b0-fb7697102792";
-
 // Компонент ResortMap - карта горнолыжных курортов с метками
 // пропс resortsArray - принимает из Home список объектов с курортами
 
@@ -29,7 +27,7 @@ const ResortMap = ({ resortsArray }) => {
             <div className="map__container _container">
                 <YMaps
                     query={{
-                        apikey: API_KEY,
+                        apikey: process.env.REACT_APP_MAP_API_KEY,
                     }}
                 >
                     <Map

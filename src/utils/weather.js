@@ -120,7 +120,6 @@ export function getCloudinessDescription(percents) {
     ).descr;
 }
 
-const APY_KEY = "c6c392533b9490521a883d71b5a1bb55";
 const OPENWEATHER_API_BASEURL = "https://api.openweathermap.org/";
 const OPENWEATHER_BASEURL = "https://openweathermap.org/";
 
@@ -131,7 +130,7 @@ export function getWeatherImage(weather) {
 
 const getWeather = async ([lat, lon]) => {
     // Запрос и получение данных о погоде с сайта
-    const url = `${OPENWEATHER_API_BASEURL}data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APY_KEY}&units=metric`;
+    const url = `${OPENWEATHER_API_BASEURL}data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_APY_KEY}&units=metric`;
 
     try {
         const response = await fetch(url);
