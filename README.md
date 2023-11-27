@@ -14,7 +14,7 @@
 -   Redux Toolkit
 -   JavaScript
 -   HTML5
--   CSS3
+-   CSS3, CSS Modules
 -   React Router
 -   React Geolocated
 -   Yandex Map
