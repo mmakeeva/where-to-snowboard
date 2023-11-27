@@ -1,3 +1,12 @@
+:root {
+    --color-background: #f9f1e7;
+    --color-active: rgb(145, 42, 42);
+    --color-gray: #767676;
+    --color-button: #3cb46e;
+    --color-active-button: #429966;
+    --color-main-bg: #f9f1e7;
+    --color-search-form-icon: #333333;
+}
 .wrapper,
 .content__wrapper {
     width: 100%;
@@ -14,7 +23,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
-    background-color: #f9f1e7;
+    background-color: var(--color-background);
 }
 
 /*** WRAPPER ***/
@@ -57,11 +66,6 @@ body {
     width: 100%;
 }
 
-.iconPng {
-    width: 20px;
-    height: 20px;
-}
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -69,4 +73,21 @@ body {
     background-color: #fff;
     opacity: 0.8;
     display: none;
+}
+
+.show-overlay {
+    display: block;
+}
+
+.link {
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: var(--color-active);
+    text-decoration: underline;
+}
+
+.active {
+    color: var(--color-active);
 }

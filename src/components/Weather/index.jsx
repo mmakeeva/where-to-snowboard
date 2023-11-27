@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./style.css";
 
-const APY_KEY = "c6c392533b9490521a883d71b5a1bb55";
+import cn from "classnames";
+import styles from "./style.module.css";
+
+import Button from "../Button";
 
 const windSpeedDescriptions = [
     {
@@ -129,18 +131,20 @@ function getCloudinessDescription(percents) {
 // weatherMap - объект с данными о погоде, хранится в состоянии компонента Weather
 // Данные для weatherMap подгружаются с сайта openweathermap при клике по кнопке с курортом
 
+const APY_KEY = "c6c392533b9490521a883d71b5a1bb55";
+const OPENWEATHER_BASEURL = "https://api.openweathermap.org/";
+
 const Weather = ({ resortsArray }) => {
-    const [weatherMap, setWeatherMap] = useState({});
+    const [weatherMap, setWeatherMap] = useState(null);
 
     const onClickButton = (event, elem) => {
-        const activeButton = document.querySelector(".button.activeButton");
+        const activeButton = document.querySelector(`.${styles.button_active}`);
 
-        if (activeButton) activeButton.classList.remove("activeButton");
-        event.target.classList.add("activeButton");
+        if (activeButton) activeButton.classList.remove(styles.button_active);
+        event.target.classList.add(styles.button_active);
 
         // Запрос и получение данных о погоде с сайта
-
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${elem.coord[0]}&lon=${elem.coord[1]}&appid=${APY_KEY}&units=metric`;
+        const url = `${OPENWEATHER_BASEURL}data/2.5/weather?lat=${elem.coord[0]}&lon=${elem.coord[1]}&appid=${APY_KEY}&units=metric`;
 
         const promise = fetch(url);
         promise
@@ -150,38 +154,36 @@ const Weather = ({ resortsArray }) => {
 
                 setWeatherMap(result);
             })
-            .catch((err) => alert(err));
+            .catch((err) => console.error(err.message));
     };
 
     const weather = (
-        <div className="weather">
-            <div className="weather__container _container">
-                <div className="resorts__buttons">
+        <div className={styles.weather}>
+            <div className={cn(styles.weather__container, "_container")}>
+                <div className={styles.resorts__buttons}>
                     {resortsArray.map((elem) => (
-                        <button
+                        <Button
                             key={elem.id}
-                            onClick={(event) => onClickButton(event, elem)}
-                            type="button"
-                            className="button"
-                        >
-                            {elem.location.split(",")[0]}
-                        </button>
+                            value={elem.location.split(",")[0]}
+                            handler={(event) => onClickButton(event, elem)}
+                            extraclass="button_resort"
+                        />
                     ))}
                 </div>
-                {weatherMap.wind ? (
-                    <div className="weather__data">
-                        <h1 className="weather__data_title">
-                            <span className="title__color">
+                {weatherMap ? (
+                    <div className={styles.weather__data}>
+                        <h1 className={styles.weather__data_title}>
+                            <span className={styles.title__color}>
                                 {weatherMap.weather[0].main}
                             </span>{" "}
                             in {weatherMap.origin}
                             <img
                                 src={`http://openweathermap.org/img/wn/${weatherMap.weather[0].icon}@2x.png`}
                                 alt={weatherMap.weather[0].description}
-                                className="weather__icon"
+                                className={styles.weather__icon}
                             />
                         </h1>
-                        <table className="weather__data_table">
+                        <table className={styles.weather__data_table}>
                             <thead>
                                 <tr>
                                     <th>Props</th>
@@ -217,7 +219,7 @@ const Weather = ({ resortsArray }) => {
                         </table>
                     </div>
                 ) : (
-                    <span className="weather__advice">
+                    <span className={styles.weather__advice}>
                         Push the button and get the weather!
                     </span>
                 )}

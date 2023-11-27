@@ -1,0 +1,12 @@
+.close {
+    padding: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.close_position_l {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translate(-100%, 0);
+}

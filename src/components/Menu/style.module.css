@@ -25,26 +25,13 @@
     }
 }
 
-.menu-item {
+.menu__menu-item {
     padding: 5px 0;
     font-size: 1.1em;
 }
 
 @media screen and (max-width: 479px) {
-    .menu-item {
+    .menu__menu-item {
         font-size: 1em;
     }
-}
-
-.link {
-    transition: color 0.3s;
-}
-
-.link:hover {
-    color: rgb(145, 42, 42);
-    text-decoration: underline;
-}
-
-.active {
-    color: rgb(145, 42, 42);
 }

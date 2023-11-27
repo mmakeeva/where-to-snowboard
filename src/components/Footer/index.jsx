@@ -1,5 +1,7 @@
 import React from "react";
-import "./style.css";
+
+import cn from "classnames";
+import styles from "./style.module.css";
 
 import facebookImg from "../../assets/img/icons/facebook.png";
 import instagramImg from "../../assets/img/icons/instagram.png";
@@ -45,27 +47,27 @@ const list1 = [
 
 const Footer = () => {
     const footer = (
-        <footer className="footer">
-            <div className="footer__top">
-                <div className="footer__container _container">
-                    <div className="soical">
+        <footer className={styles.footer}>
+            <div className={styles.footer__top}>
+                <div className={cn(styles.footer__container, "_container")}>
+                    <div className={styles.soical}>
                         <h3>FOLLOW US</h3>
-                        <div className="social__icons">
+                        <div className={styles.social__icons}>
                             <a
                                 href="http://facebook.com/"
-                                className="social_logo"
+                                className={styles.social_logo}
                             >
                                 <img src={facebookImg} alt="facebook_image" />
                             </a>
                             <a
                                 href="http://instagram.com/"
-                                className="social_logo"
+                                className={styles.social_logo}
                             >
                                 <img src={instagramImg} alt="instagram_image" />
                             </a>
                             <a
                                 href="http://twitter.com/"
-                                className="social_logo"
+                                className={styles.social_logo}
                             >
                                 <img src={twitterImg} alt="twitter_image" />
                             </a>
@@ -73,9 +75,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer__container _container">
-                <div className="footer__middle">
-                    <div className="middle__column">
+            <div className={cn(styles.footer__container, "_container")}>
+                <div className={styles.footer__middle}>
+                    <div className={styles.middle__column}>
                         <h3>HELP AND ADVICE</h3>
                         <ul>
                             {list0.map((element) => (
@@ -90,7 +92,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="middle__column">
+                    <div className={styles.middle__column}>
                         <h3>COMPANY</h3>
                         <ul>
                             {list1.map((element) => (
@@ -105,37 +107,41 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="middle__column">
-                        <div className="middle__column-item">
-                            <span className="middle__column__text">Phone</span>
+                    <div className={styles.middle__column}>
+                        <div className={styles.middle__column_item}>
+                            <span className={styles.middle__column__text}>
+                                Phone
+                            </span>
                             <a
                                 href="tel:+79001234567"
-                                className="middle__column__value"
+                                className={styles.middle__column__value}
                             >
                                 +7 900 1234567
                             </a>
                         </div>
-                        <div className="middle__column-item">
-                            <span className="middle__column__text">
+                        <div className={styles.middle__column_item}>
+                            <span className={styles.middle__column__text}>
                                 Address
                             </span>
-                            <address className="middle__column__value">
+                            <address className={styles.middle__column__value}>
                                 Zelenograd
                             </address>
                         </div>
-                        <div className="middle__column-item">
-                            <span className="middle__column__text">Mail</span>
+                        <div className={styles.middle__column_item}>
+                            <span className={styles.middle__column__text}>
+                                Mail
+                            </span>
                             <a
                                 href="mailto:gmail@gmail.com"
-                                className="middle__column__value"
+                                className={styles.middle__column__value}
                             >
                                 gmail@gmail.com
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="footer__bottom">
-                    <small className="copyright">
+                <div className={styles.footer__bottom}>
+                    <small className={styles.copyright}>
                         &copy;&nbsp;2023@WhereToSnowboard. All rights reserved
                     </small>
                 </div>

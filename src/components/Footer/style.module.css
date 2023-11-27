@@ -4,8 +4,8 @@
 
 .footer__top {
     padding: 50px 0 50px 0;
-    background-color: rgb(145, 42, 42);
-    color: #f9f1e7;
+    background-color: var(--color-active);
+    color: var(--color-main-bg);
 }
 
 .footer__middle {
@@ -16,10 +16,10 @@
 
 .middle__column:last-child {
     padding-left: 30px;
-    border-left: 2px solid rgb(145, 42, 42);
+    border-left: 2px solid var(--color-active);
 }
 
-.middle__column-item {
+.middle__column_item {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
@@ -32,7 +32,7 @@
 .middle__column__value {
     display: inline-block;
     font-weight: 700;
-    color: rgb(145, 42, 42);
+    color: var(--color-active);
 }
 
 .footer__bottom {

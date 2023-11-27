@@ -17,7 +17,7 @@
 -   CSS3
 -   React Router
 -   React Geolocated
--   API Yandex Map
+-   Yandex Map
 -   API Openweather
 
 ### Установка зависимостей

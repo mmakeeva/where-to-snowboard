@@ -1,5 +1,9 @@
 import React from "react";
-import "./style.css";
+
+import cn from "classnames";
+import styles from "./style.module.css";
+
+import Icon from "../Icon";
 import locImg from "../../assets/img/icons/location.png";
 
 // Компонент GalleryImages - изображения для галереи
@@ -8,25 +12,23 @@ import locImg from "../../assets/img/icons/location.png";
 
 const GalleryImages = ({ images, extraClass }) => {
     const galleryImages = (
-        <div className={`galleryImages ${extraClass}`}>
+        <div className={cn(styles.gallery_images, styles[extraClass])}>
             {images.map((item) => {
+                const divClassName = item.visible ? "" : "hiddenItem";
                 const div = (
                     <div
                         key={item.id}
-                        className={`gallery__item ${
-                            item.visible ? "" : "hiddenItem"
-                        }`}
+                        className={cn(
+                            styles.gallery__item,
+                            styles[divClassName]
+                        )}
                     >
-                        <div className="gallery__item_image">
+                        <div className={styles.gallery__item_image}>
                             <img src={item.src} alt={item.alt} />
                         </div>
                         {item.location && (
-                            <div className="location">
-                                <img
-                                    src={locImg}
-                                    alt="Location"
-                                    className="iconPng"
-                                />
+                            <div className={styles.location}>
+                                <Icon src={locImg} alt="Location" />
                                 <p>{item.location}</p>
                             </div>
                         )}

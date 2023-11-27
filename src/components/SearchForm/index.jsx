@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import "./style.css";
+
+import styles from "./style.module.css";
+
 import searchImg from "../../assets/img/icons/Search.png";
+import Icon from "../Icon";
 
 const articles = [
     {
@@ -81,22 +84,22 @@ const SearchForm = () => {
     };
 
     const search = (
-        <div className="search">
-            <form className="searchForm" onSubmit={onSearchArticles}>
+        <div className={styles.search}>
+            <form className={styles["search-form"]} onSubmit={onSearchArticles}>
                 <button
                     type="submit"
                     aria-label="Search"
-                    className="button-search-icon"
+                    className={styles["search-form__icon"]}
                 >
-                    <img src={searchImg} alt="search" className="iconPng" />
+                    <Icon src={searchImg} alt="search" />
                 </button>
                 <input
-                    className="searchInput"
+                    className="input"
                     type="text"
                     value={searchValue}
                     onChange={onChangeHandler}
                     placeholder="Пример: роза хутор"
-                    name="searchInput"
+                    name="search-form__input"
                 />
             </form>
         </div>

@@ -1,15 +1,15 @@
-.galleryImages {
+.gallery_images {
     display: flex;
     justify-content: space-between;
-    row-gap: 10px;
+    gap: 10px;
 }
 
-.galleryImages_wrap {
+.gallery_images_wrap {
     flex-wrap: wrap;
 }
 
 .gallery__item {
-    width: 30%;
+    width: 390px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;

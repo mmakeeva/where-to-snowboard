@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./style.css";
 
-const Checkbox = ({ filter, handler }) => {
+import styles from "./style.module.css";
+
+const Checkbox = ({ chb, handler }) => {
     const [isChecked, setChecked] = useState(false);
 
     const checkedHandler = (event) => {
@@ -10,18 +11,20 @@ const Checkbox = ({ filter, handler }) => {
     };
 
     const checkbox = (
-        <label htmlFor={filter.value}>
+        <div className={styles.checkbox}>
             <input
                 type="checkbox"
-                id={filter.value}
-                value={filter.value}
-                name={filter.name}
+                id={chb.value}
+                value={chb.value}
+                name={chb.name}
                 onChange={checkedHandler}
                 checked={isChecked}
+                className={styles.checkbox_input}
             />
-            {filter.label}
-            <span className="checkbox-custom" />
-        </label>
+            <label htmlFor={chb.value} className={styles.checkbox_label}>
+                {chb.label}
+            </label>
+        </div>
     );
 
     return checkbox;

@@ -1,6 +1,7 @@
 import React from "react";
 import ResortMap from "../Map";
-import "./style.css";
+
+import styles from "./style.module.css";
 
 import Gallery from "../Gallery";
 
@@ -13,7 +14,7 @@ import Gallery from "../Gallery";
 
 const Home = ({ resortsArray }) => {
     const home = (
-        <div className="home">
+        <div className={styles.home}>
             <Gallery />
             <ResortMap resortsArray={resortsArray} />
         </div>

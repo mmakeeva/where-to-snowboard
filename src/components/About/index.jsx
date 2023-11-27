@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from "react";
-import "./style.css";
+
+import cn from "classnames";
+import styles from "./style.module.css";
 
 import GalleryImages from "../GalleryImages";
 import Checkbox from "../Checkbox";
@@ -150,64 +152,54 @@ const About = ({ resortsArray }) => {
     }
 
     const about = (
-        <div className="about">
-            <div className="about__container _container">
-                <div className="about__content">
+        <div className={styles.about}>
+            <div className={cn(styles.about__container, "_container")}>
+                <div className={styles.about__content}>
                     <p>Find a&nbsp;resort especially for yourself!</p>
-                    <div className="resorts__filter">
-                        <ul className="filter__list">
-                            <p className="list__title">Choose country</p>
+                    <div className={styles.resorts__filter}>
+                        <ul className={styles.filter__list}>
+                            <p className={styles.list__title}>Choose country</p>
                             {countryArray.map((elem) => (
-                                <li
-                                    className="list__item checkbox"
-                                    key={elem.value}
-                                >
+                                <li key={elem.value}>
                                     <Checkbox
-                                        filter={elem}
+                                        chb={elem}
                                         handler={onCheckHandler}
                                     />
                                 </li>
                             ))}
                         </ul>
-                        <ul className="filter__list">
-                            <p className="list__title">Choose skill level</p>
+                        <ul className={styles.filter__list}>
+                            <p className={styles.list__title}>
+                                Choose skill level
+                            </p>
                             {skillArray.map((elem) => (
-                                <li
-                                    className="list__item checkbox"
-                                    key={elem.value}
-                                >
+                                <li key={elem.value}>
                                     <Checkbox
-                                        filter={elem}
+                                        chb={elem}
                                         handler={onCheckHandler}
                                     />
                                 </li>
                             ))}
                         </ul>
-                        <ul className="filter__list">
-                            <p className="list__title">Choose style</p>
+                        <ul className={styles.filter__list}>
+                            <p className={styles.list__title}>Choose style</p>
                             {styleArray.map((elem) => (
-                                <li
-                                    className="list__item checkbox"
-                                    key={elem.value}
-                                >
+                                <li key={elem.value}>
                                     <Checkbox
-                                        filter={elem}
+                                        chb={elem}
                                         handler={onCheckHandler}
                                     />
                                 </li>
                             ))}
                         </ul>
-                        <ul className="filter__list">
-                            <p className="list__title">
+                        <ul className={styles.filter__list}>
+                            <p className={styles.list__title}>
                                 Choose season open/close
                             </p>
                             {seasonArray.map((elem) => (
-                                <li
-                                    className="list__item checkbox"
-                                    key={elem.value}
-                                >
+                                <li key={elem.value}>
                                     <Checkbox
-                                        filter={elem}
+                                        chb={elem}
                                         handler={onCheckHandler}
                                     />
                                 </li>
@@ -216,7 +208,7 @@ const About = ({ resortsArray }) => {
                     </div>
                     <GalleryImages
                         images={resorts.currentResorts}
-                        extraClass="galleryImages_wrap"
+                        extraClass="gallery_images_wrap"
                     />
                 </div>
             </div>

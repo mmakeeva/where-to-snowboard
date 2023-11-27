@@ -1,8 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { shiftLeft, shiftRight, selectBrands } from "../../store/store";
 
-import "./style.css";
+import cn from "classnames";
+import styles from "./style.module.css";
+
+import { shiftLeft, shiftRight, selectBrands } from "../../store/store";
 
 import arrowLeft from "../../assets/img/icons/arrow-left.png";
 import arrowRight from "../../assets/img/icons/arrow-right.png";
@@ -28,36 +30,36 @@ const Gallery = () => {
     const dispatch = useDispatch();
 
     const gallery = (
-        <div className="gallery">
+        <div className={styles.gallery}>
             <button
                 type="button"
-                className="button showBrandsButton"
+                className={cn(styles.button, styles.showBrandsButton)}
                 onClick={showBrands}
             >
                 Show brands
             </button>
-            <div className="gallery__container">
+            <div className={styles.gallery__container}>
                 <button
                     type="button"
-                    className="leftSide"
+                    className={styles.leftSide}
                     onClick={() => dispatch(shiftLeft())}
                 >
                     <img
                         src={arrowLeft}
                         alt="arrow-left"
-                        className="buttonPng"
+                        className={styles.buttonPng}
                     />
                 </button>
                 <GalleryImages images={brandsImageList} extraClass="" />
                 <button
                     type="button"
-                    className="rightSide"
+                    className={styles.rightSide}
                     onClick={() => dispatch(shiftRight())}
                 >
                     <img
                         src={arrowRight}
                         alt="arrow-right"
-                        className="buttonPng"
+                        className={styles.buttonPng}
                     />
                 </button>
             </div>

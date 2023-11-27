@@ -1,5 +1,7 @@
 import React from "react";
-import "./style.css";
+
+import cn from "classnames";
+import styles from "./style.module.css";
 
 import Menu from "../Menu";
 import SearchForm from "../SearchForm";
@@ -12,8 +14,8 @@ import Avatar from "../Avatar";
 
 const Navigation = () => {
     const navigation = (
-        <nav className="navigation">
-            <div className="navigation__container _container">
+        <nav className={styles.navigation}>
+            <div className={cn(styles.navigation__container, "_container")}>
                 <Menu />
                 <SearchForm />
                 <Avatar />

@@ -1,6 +1,7 @@
 import React from "react";
-import "./style.css";
 import { NavLink } from "react-router-dom";
+
+import styles from "./style.module.css";
 
 // Вкладки для меню навигации
 const menuArray = [
@@ -26,11 +27,11 @@ const menuArray = [
 const Menu = () => {
     const menu = (
         <nav>
-            <ul className="menu">
-                {menuArray.map((elem) => (
-                    <li key={elem.id} className="menu-item">
-                        <NavLink className="link" to={`/${elem.path}`} end>
-                            {elem.name}
+            <ul className={styles.menu}>
+                {menuArray.map(({ id, path, name }) => (
+                    <li key={id} className={styles["menu__menu-item"]}>
+                        <NavLink className="link" to={`/${path}`} end>
+                            {name}
                         </NavLink>
                     </li>
                 ))}
