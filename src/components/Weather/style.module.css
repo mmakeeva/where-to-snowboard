@@ -65,7 +65,7 @@
     color: var(--color-active);
 }
 
-.button_active {
+.resorts__buttons .button_active {
     background-color: var(--color-active);
 }
 
