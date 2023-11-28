@@ -24,6 +24,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
 import Weather from "./components/Weather";
+import Enter from "./components/Enter";
 
 // Импорт изображений
 import elbrusImg from "./assets/img/images/Elbrus.jpg";
@@ -302,6 +303,7 @@ const WhereToSnowboard = () => {
                         path="/weather"
                         element={<Weather resortsArray={resortsData} />}
                     />
+                    <Route path="/avatar" element={<Enter />} />
                 </Routes>
             </main>
             <Footer />
@@ -315,7 +317,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <StrictMode>
-        <Router>
+        <Router basename="/where-to-snowboard">
             <Provider store={store}>
                 <WhereToSnowboard />
             </Provider>

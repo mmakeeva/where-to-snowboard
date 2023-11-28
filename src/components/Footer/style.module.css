@@ -1,15 +1,11 @@
-.footer {
-    padding-top: 50px;
-}
-
 .footer__top {
-    padding: 50px 0 50px 0;
+    padding: 25px 0;
     background-color: var(--color-active);
     color: var(--color-main-bg);
 }
 
 .footer__middle {
-    padding-top: 50px;
+    padding-top: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -36,7 +32,7 @@
 }
 
 .footer__bottom {
-    padding: 50px 0 5px 0;
+    padding: 25px 0 5px;
 }
 
 .soical {

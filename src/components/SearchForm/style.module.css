@@ -13,6 +13,7 @@
 
 .search-form__icon {
     flex: 0 0 45px;
+    width: 45px;
     height: 45px;
     font-size: 15px;
     color: var(--color-search-form-icon);

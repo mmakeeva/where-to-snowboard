@@ -53,13 +53,6 @@ body {
 .content__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
-}
-
-@media screen and (max-width: 767px) {
-    .content__wrapper {
-        padding: 10px 0px;
-    }
 }
 
 .content__wrapper ~ div {

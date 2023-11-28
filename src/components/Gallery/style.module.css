@@ -12,12 +12,12 @@
     column-gap: 10px;
 }
 
-.buttonPng {
+.arrow {
     width: 30px;
     height: 30px;
 }
 
-.showBrandsButton {
+button.show_brands_button {
     display: none;
     width: 200px;
     align-self: center;
@@ -28,11 +28,11 @@
         display: none;
     }
 
-    .showBrandsButton {
+    button.show_brands_button {
         display: block;
     }
 }
 
-.showGallery {
+.show_gallery {
     display: flex;
 }

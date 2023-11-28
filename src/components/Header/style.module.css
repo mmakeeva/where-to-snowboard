@@ -9,7 +9,7 @@
 
 .header__container {
     position: relative;
-    min-height: 400px;
+    min-height: 300px;
     transition: min-height 0.5s;
 }
 
@@ -26,16 +26,7 @@
     transition: font-size 0.5s;
 }
 
-@media screen and (max-width: 1199px) {
-    .header__container {
-        min-height: 380px;
-    }
-}
-
 @media screen and (max-width: 991px) {
-    .header__container {
-        min-height: 300px;
-    }
     .header__title {
         font-size: 2.5em;
     }
