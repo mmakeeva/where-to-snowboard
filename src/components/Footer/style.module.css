@@ -1,7 +1,7 @@
 .footer__top {
     padding: 25px 0;
     background-color: var(--color-active);
-    color: var(--color-main-bg);
+    color: var(--color-background);
 }
 
 .footer__middle {

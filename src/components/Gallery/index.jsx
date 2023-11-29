@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import cn from "classnames";
 import styles from "./style.module.css";
 
 import { shiftLeft, shiftRight, selectBrands } from "../../store/store";

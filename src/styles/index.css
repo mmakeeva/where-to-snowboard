@@ -4,8 +4,9 @@
     --color-gray: #767676;
     --color-button: #3cb46e;
     --color-active-button: #429966;
-    --color-main-bg: #f9f1e7;
+    --color-article-background: #f2e6da;
     --color-search-form-icon: #333333;
+    --line-height: 1.6em;
 }
 .wrapper,
 .content__wrapper {
@@ -22,7 +23,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: var(--line-height);
     background-color: var(--color-background);
 }
 
