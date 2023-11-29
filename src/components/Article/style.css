@@ -1,0 +1,23 @@
+.simple__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.simple__card {
+    height: 300px;
+    overflow: hidden;
+    padding: 30px;
+    width: calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+.simple__text {
+    margin-top: 15px;
+}
+
+.simple__title {
+    background-color: blueviolet;
+}
+
+.simple__button {
+    background-color: blueviolet;
+}

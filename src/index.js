@@ -25,6 +25,7 @@ import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
 import Weather from "./components/Weather";
 import Enter from "./components/Enter";
+import ArticleList, { FullArticle } from "./components/Article";
 
 // Импорт изображений
 import elbrusImg from "./assets/img/images/Elbrus.jpg";
@@ -288,6 +289,7 @@ const WhereToSnowboard = () => {
                         errorElement={<ErrorPage />}
                     />
                     <Route
+                        exact
                         path="/about"
                         element={
                             <About
@@ -300,10 +302,21 @@ const WhereToSnowboard = () => {
                     />
 
                     <Route
+                        exact
                         path="/weather"
                         element={<Weather resortsArray={resortsData} />}
                     />
-                    <Route path="/avatar" element={<Enter />} />
+                    <Route exact path="/avatar" element={<Enter />} />
+                    <Route
+                        exact
+                        path="/search/articles"
+                        element={<ArticleList />}
+                    />
+                    <Route
+                        exact
+                        path="/search/articles/article/:id"
+                        element={<FullArticle />}
+                    />
                 </Routes>
             </main>
             <Footer />

@@ -23,9 +23,6 @@
     .search-form {
         max-width: 300px;
     }
-    .title {
-        font-size: 1.5em;
-    }
 }
 
 @media screen and (max-width: 479px) {
@@ -41,28 +38,4 @@
     .search-form__input {
         display: none;
     }
-}
-
-.articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-}
-
-.articles article {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    max-height: 200px;
-}
-
-article p {
-    background-color: #fff;
-    padding: 5px;
-    overflow-y: scroll;
-}
-
-.articles button {
-    width: 150px;
 }
