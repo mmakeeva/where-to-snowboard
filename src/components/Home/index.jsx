@@ -16,6 +16,12 @@ const Home = ({ resortsArray }) => {
     const home = (
         <div className={styles.home}>
             <Gallery />
+            <div className="_container">
+                <p className={styles.home__content}>
+                    Snowboarding as&nbsp;a&nbsp;Hobby: The Perfect Way
+                    to&nbsp;Get Your Adrenaline Fix
+                </p>
+            </div>
             <ResortMap resortsArray={resortsArray} />
         </div>
     );

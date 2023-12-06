@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import styles from "./style.module.css";
@@ -20,14 +20,16 @@ import GalleryImages from "../GalleryImages";
 // brandsImageList - список брендов для отображения в галерее, берется из глобального хранилища store
 
 // При разрешении окна до 768px галерея брендов скрывается и появляется кнопка show_brands_button для раскрытия/сокрытия галереи
-function showBrands() {
-    document
-        .querySelector(".gallery__container")
-        .classList.toggle("show_gallery");
-}
+
 const Gallery = () => {
     const brandsImageList = useSelector(selectBrands);
     const dispatch = useDispatch();
+
+    const [show, setShow] = useState(false);
+
+    const showBrands = () => {
+        setShow(!show);
+    };
 
     const gallery = (
         <div className={styles.gallery}>
@@ -36,7 +38,11 @@ const Gallery = () => {
                 handler={showBrands}
                 extraclass={styles.show_brands_button}
             />
-            <div className={styles.gallery__container}>
+            <div
+                className={`${styles.gallery__gallery_container} ${
+                    show ? styles.show_gallery : " "
+                }`}
+            >
                 <button
                     type="button"
                     className={styles.leftSide}

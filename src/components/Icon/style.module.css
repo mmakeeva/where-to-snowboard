@@ -1,4 +1,13 @@
-.icon {
+.icon_small {
     width: 20px;
     height: 20px;
+}
+
+.icon_big {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_align-center {
+    vertical-align: center;
 }
