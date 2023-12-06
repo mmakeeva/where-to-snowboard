@@ -76,13 +76,13 @@
 
 @media screen and (max-width: 479px) {
     .footer {
-        padding-top: 20px;
+        padding-top: 5px;
     }
     .footer__top {
-        padding: 20px 0 20px 0;
+        padding: 10px 0 10px 0;
     }
     .footer__middle {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .middle__column:last-child {
         padding-left: 15px;
@@ -97,6 +97,9 @@
 }
 
 @media screen and (max-width: 319px) {
+    .footer__top {
+        padding: 5px 0 5px 0;
+    }
     .footer__middle {
         grid-template-columns: none;
         grid-template-rows: repeat(3, 1fr);
