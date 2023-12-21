@@ -6,7 +6,7 @@ import { useGeolocated } from "react-geolocated";
 import mountainImg from "../../assets/img/icons/mountain.jpeg";
 import topImg from "../../assets/img/icons/top.png";
 
-import Icon from "../Icon";
+import Icon from "../../UI/Icon";
 
 // Компонент ResortMap - карта горнолыжных курортов с метками
 // пропс resortsArray - принимает из Home список объектов с курортами

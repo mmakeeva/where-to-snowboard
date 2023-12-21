@@ -17,13 +17,13 @@ import "./styles/null.css";
 import "./styles/index.css";
 
 // Импорт компонентов
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 import Navigation from "./components/Navigation";
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import ErrorPage from "./components/ErrorPage";
-import Weather from "./components/Weather";
+import Weather from "./pages/Weather";
 import Enter from "./components/Enter";
 import ArticleList, { FullArticle } from "./components/Article";
 

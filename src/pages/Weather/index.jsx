@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./style.module.css";
 
-import Button from "../Button";
+import Button from "../../UI/Button";
 
 import getWeather, {
     getCloudinessDescription,

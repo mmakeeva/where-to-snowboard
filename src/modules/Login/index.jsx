@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./style.module.css";
 
-import Input from "../Input";
+import Input from "../../UI/Input";
 
 const Login = () => {
     const login = (

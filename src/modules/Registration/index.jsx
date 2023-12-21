@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./style.module.css";
 
-import Input from "../Input";
-import Checkbox from "../Checkbox";
+import Input from "../../UI/Input";
+import Checkbox from "../../UI/Checkbox";
 
 const Registration = () => {
     const registration = (

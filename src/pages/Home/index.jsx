@@ -1,9 +1,9 @@
 import React from "react";
-import ResortMap from "../Map";
+import ResortMap from "../../modules/Map";
 
 import styles from "./style.module.css";
 
-import Gallery from "../Gallery";
+import Gallery from "../../modules/Gallery";
 
 // Компонент Home - домашняя страница
 // пропс resortsArray - список горнолыжных курортов, передается из WhereToSnowboard

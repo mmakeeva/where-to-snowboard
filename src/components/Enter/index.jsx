@@ -3,10 +3,10 @@ import React from "react";
 import cn from "classnames";
 import styles from "./style.module.css";
 
-import Button from "../Button";
-import Close from "../Close";
-import Login from "../Login";
-import Registration from "../Registration";
+import Button from "../../UI/Button";
+import Close from "../../UI/Close";
+import Login from "../../modules/Login";
+import Registration from "../../modules/Registration";
 
 // Открывает модальное окно
 const showPopUp = (event) => {

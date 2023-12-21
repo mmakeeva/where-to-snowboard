@@ -8,8 +8,8 @@ import { shiftLeft, shiftRight, selectBrands } from "../../store/store";
 import arrowLeft from "../../assets/img/icons/arrow-left.png";
 import arrowRight from "../../assets/img/icons/arrow-right.png";
 
-import Button from "../Button";
-import GalleryImages from "../GalleryImages";
+import Button from "../../UI/Button";
+import GalleryImages from "../../components/GalleryImages";
 
 // Компонент Gallery - галерея изображений с кнопками для переключения
 

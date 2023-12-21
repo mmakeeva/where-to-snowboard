@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./style.module.css";
 
-import GalleryImages from "../GalleryImages";
-import Checkbox from "../Checkbox";
+import GalleryImages from "../../components/GalleryImages";
+import Checkbox from "../../UI/Checkbox";
 
 // Фильтр по стране
 const countryArray = [

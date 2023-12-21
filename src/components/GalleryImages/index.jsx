@@ -3,7 +3,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./style.module.css";
 
-import Icon from "../Icon";
+import Icon from "../../UI/Icon";
 import locImg from "../../assets/img/icons/location.png";
 
 // Компонент GalleryImages - изображения для галереи

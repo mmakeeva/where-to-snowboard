@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import styles from "./style.module.css";
 
 import searchImg from "../../assets/img/icons/Search.png";
-import Icon from "../Icon";
+import Icon from "../../UI/Icon";
 import { searchArticle } from "../../store/store";
 
 // Компонент SearchForm - форма поиска
