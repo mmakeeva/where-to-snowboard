@@ -9,7 +9,7 @@ const Button = ({ value, handler, extraclass }) => {
             type="button"
             className={cn(
                 styles.button,
-                extraclass.length
+                extraclass
                     ? extraclass.split(" ").map((elem) => styles[elem] || elem)
                     : extraclass
             )}

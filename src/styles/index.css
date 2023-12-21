@@ -1,13 +1,13 @@
 :root {
-    --color-background: #f9f1e7;
+    --color-background: rgb(200, 224, 244);
     --color-background-opacity-small: rgba(249, 241, 231, 0.5);
     --color-background-opacity-large: rgba(249, 241, 231, 0.8);
 
     --color-active: rgb(145, 42, 42);
-    --color-gray: #767676;
-    --color-button: #3cb46e;
-    --color-active-button: #429966;
-    --color-article-background: #f2e6da;
+    --color-gray: #333333;
+    --color-button: rgb(80, 138, 168);
+    --color-active-button: rgb(3, 25, 39);
+    --color-article-background: rgba(249, 241, 231, 0.5);
     --color-search-form-icon: #333333;
     --line-height: 1.6em;
     --gallery_column_gap_small: 10px;

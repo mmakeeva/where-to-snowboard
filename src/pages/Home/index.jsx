@@ -18,8 +18,8 @@ const Home = ({ resortsArray }) => {
             <Gallery />
             <div className="_container">
                 <p className={styles.home__content}>
-                    Snowboarding as&nbsp;a&nbsp;Hobby: The Perfect Way
-                    to&nbsp;Get Your Adrenaline Fix
+                    Snowboarding as&nbsp;a&nbsp;hobby: the perfect way
+                    to&nbsp;get your adrenaline fix
                 </p>
             </div>
             <ResortMap resortsArray={resortsArray} />
