@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/where-to-snowboard/static/css/main.2572f137.css",
-    "main.js": "/where-to-snowboard/static/js/main.1dcabbc8.js",
+    "main.css": "/where-to-snowboard/static/css/main.1ee17ecf.css",
+    "main.js": "/where-to-snowboard/static/js/main.08fb2881.js",
     "static/media/Dolomites.jpg": "/where-to-snowboard/static/media/Dolomites.68eb91cf0b937c20070f.jpg",
     "static/media/Livigno.jpg": "/where-to-snowboard/static/media/Livigno.4d2fab7d5b02058fbeeb.jpg",
     "static/media/Sochi.jpg": "/where-to-snowboard/static/media/Sochi.db3709e9205cae474fb9.jpg",
@@ -27,15 +27,13 @@
     "static/media/user.png": "/where-to-snowboard/static/media/user.a6143582309785dca610.png",
     "static/media/burton.png": "/where-to-snowboard/static/media/burton.d375a639ec192c89de57.png",
     "static/media/facebook.png": "/where-to-snowboard/static/media/facebook.a5def58db1e9c1b38269.png",
-    "static/media/arrow-left.png": "/where-to-snowboard/static/media/arrow-left.a2ee411472ded07e388f.png",
-    "static/media/arrow-right.png": "/where-to-snowboard/static/media/arrow-right.a047fe68b104ae4adae5.png",
     "static/media/Dombay.jpg": "/where-to-snowboard/static/media/Dombay.5c6c079c8c7548a68796.jpg",
     "index.html": "/where-to-snowboard/index.html",
-    "main.2572f137.css.map": "/where-to-snowboard/static/css/main.2572f137.css.map",
-    "main.1dcabbc8.js.map": "/where-to-snowboard/static/js/main.1dcabbc8.js.map"
+    "main.1ee17ecf.css.map": "/where-to-snowboard/static/css/main.1ee17ecf.css.map",
+    "main.08fb2881.js.map": "/where-to-snowboard/static/js/main.08fb2881.js.map"
   },
   "entrypoints": [
-    "static/css/main.2572f137.css",
-    "static/js/main.1dcabbc8.js"
+    "static/css/main.1ee17ecf.css",
+    "static/js/main.08fb2881.js"
   ]
 }
