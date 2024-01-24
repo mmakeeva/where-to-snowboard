@@ -1,0 +1,124 @@
+.map {
+    position: relative;
+    --height-ymap-container-big: 600px;
+    --height-ymap-container-medium: 400px;
+    --height-ymap-container-small: 320px;
+    --top-font-size: 1.8rem;
+    --top-font-size-small: 1rem;
+    --legend-min-width: 270px;
+    --legend-max-width: 315px;
+
+    @media screen and (max-width: 479px) {
+        margin-bottom: var(--height-ymap-container-small);
+    }
+}
+
+.ymap__container {
+    width: 100%;
+    height: var(--height-ymap-container-big);
+    border: none;
+
+    @media screen and (max-width: 991px) {
+        height: var(--height-ymap-container-medium);
+    }
+
+    @media screen and (max-width: 479px) {
+        height: var(--height-ymap-container-small);
+    }
+}
+
+.map__hint {
+    width: 200px;
+    height: 140px;
+}
+
+.map__legend {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    height: var(--height-ymap-container-big);
+    color: var(--color-active);
+    background-color: var(--color-background-opacity-small);
+    z-index: 1;
+    min-width: var(--legend-min-width);
+    max-width: var(--legend-max-width);
+    padding: 2.7em 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2em;
+
+    @media screen and (max-width: 991px) {
+        height: var(--height-ymap-container-medium);
+        row-gap: 0.8em;
+        padding-top: 0.4em;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding-top: 0.3em;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        height: auto;
+        min-height: var(--height-ymap-container-small);
+    }
+}
+
+.legend__title {
+    font-size: inherit;
+    text-align: center;
+}
+
+.legend__countries {
+    font-size: var(--top-font-size);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    counter-reset: topboard;
+
+    @media screen and (max-width: 479px) {
+        font-size: var(--top-font-size-small);
+        row-gap: 0.3em;
+        padding: 0.3em 0.3em 0.3em;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    counter-increment: topboard;
+    position: relative;
+    padding: 0.4em;
+    padding-left: 1.8em;
+    cursor: pointer;
+    background-color: var(--color-background-opacity-large);
+
+    &::before {
+        content: counter(topboard);
+        position: absolute;
+        z-index: 2;
+        top: 12px;
+        left: 15px;
+        width: 25px;
+        height: 25px;
+        color: var(--color-active);
+        background: #fff;
+        border-radius: 1.1em;
+        text-align: center;
+        font-size: var(--top-font-size-small);
+
+        @media screen and (max-width: 479px) {
+            top: 10px;
+            left: 10px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        padding-left: 2.7em;
+    }
+}

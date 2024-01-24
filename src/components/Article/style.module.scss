@@ -3,10 +3,10 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 0.5em;
     background-color: var(--color-article-background);
     border: 1px solid var(--color-active-button);
-    padding: 10px;
+    padding: 0.5em;
 }
 
 .article_full {
@@ -40,5 +40,5 @@
 .article_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.1em;
 }

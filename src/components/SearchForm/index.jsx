@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import searchImg from "../../assets/img/icons/Search.png";
 import Icon from "../../UI/Icon";

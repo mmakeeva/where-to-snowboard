@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6em;
+
+    @media screen and (max-width: 991px) {
+        font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 479px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 319px) {
+        font-size: 1rem;
+    }
+}
+
+.home__content {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.9rem;
+    }
+}

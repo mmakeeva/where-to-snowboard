@@ -1,7 +1,8 @@
-import "./style.css";
 import React from "react";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import { useGeolocated } from "react-geolocated";
+
+import "./style.scss";
 
 import mountainImg from "../../assets/img/icons/mountain.jpeg";
 import topImg from "../../assets/img/icons/top.png";

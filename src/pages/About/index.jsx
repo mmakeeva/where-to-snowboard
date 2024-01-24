@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import cn from "classnames";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import GalleryImages from "../../components/GalleryImages";
 import Checkbox from "../../UI/Checkbox";

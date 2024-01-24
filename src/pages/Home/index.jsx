@@ -1,7 +1,7 @@
 import React from "react";
 import ResortMap from "../../modules/Map";
 
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import Gallery from "../../modules/Gallery";
 

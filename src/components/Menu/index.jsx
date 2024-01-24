@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 // Вкладки для меню навигации
 const menuArray = [

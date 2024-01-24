@@ -2,15 +2,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.2em;
     min-height: 100px;
-    padding: 20px 10px;
+    padding: 1.1em 0.5em;
 }
 
 @media screen and (max-width: 767px) {
     .navigation__container {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 }
 

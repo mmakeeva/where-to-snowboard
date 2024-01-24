@@ -1,0 +1,129 @@
+$social-logo-height: 30px;
+$social-logo-width: 30px;
+
+.footer {
+    @media screen and (max-width: 767px) {
+        padding-top: 1.6em;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding-top: 0.3em;
+    }
+}
+
+.footer__top {
+    padding: 1.38em 0;
+    background-color: var(--color-active);
+    color: var(--color-background);
+
+    @media screen and (max-width: 767px) {
+        padding: 1.6em 0 1.6em 0;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding: 0.5em 0 0.5em 0;
+    }
+
+    @media screen and (max-width: 319px) {
+        padding: 0.27em 0 0.27em 0;
+    }
+}
+
+.footer__middle {
+    padding-top: 1.38em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 767px) {
+        padding-top: 1.6em;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding-top: 0.5em;
+    }
+
+    @media screen and (max-width: 319px) {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+.middle__column {
+    &:last-child {
+        padding-left: 1.6em;
+        border-left: 0.1em solid var(--color-active);
+    }
+
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            padding-left: 0.8em;
+        }
+        h3 {
+            font-size: 1em;
+        }
+        ul {
+            padding-top: 0.5em;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        &:last-child {
+            padding-left: 0.8em;
+        }
+        h3 {
+            font-size: 0.7em;
+        }
+        ul {
+            padding-top: 5em;
+        }
+    }
+}
+
+.middle__column_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.4em;
+}
+
+.middle__column__text {
+    display: block;
+}
+
+.middle__column__value {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-active);
+}
+
+.footer__bottom {
+    padding: 1.38em 0 0.3em;
+}
+
+.soical {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+
+    @media screen and (max-width: 767px) {
+        h3 {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        h3 {
+            font-size: 0.7em;
+        }
+    }
+}
+
+.social__icons {
+    display: flex;
+    gap: 1.1em;
+}
+
+.social_logo {
+    display: inline-block;
+    width: $social-logo-width;
+    height: $social-logo-height;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import avatarPng from "../../assets/img/icons/user.png";
 

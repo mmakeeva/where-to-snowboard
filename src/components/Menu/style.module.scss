@@ -1,13 +1,13 @@
 .menu {
     display: flex;
-    column-gap: 40px;
-    row-gap: 10px;
+    column-gap: 2.2em;
+    row-gap: 0.5em;
     flex: 0 1 calc(494 / 1240 * 100%);
 }
 
 @media screen and (max-width: 767px) {
     .menu {
-        column-gap: 30px;
+        column-gap: 1.6em;
     }
 }
 
@@ -15,18 +15,18 @@
     .menu {
         flex-direction: column;
         flex-basis: 100px;
-        column-gap: 15px;
+        column-gap: 0.83em;
     }
 }
 
 @media screen and (max-width: 479px) {
     .menu {
-        column-gap: 5px;
+        column-gap: 0.3em;
     }
 }
 
 .menu__menu-item {
-    padding: 5px 0;
+    padding: 0.3em 0;
     font-size: 1.1em;
 }
 

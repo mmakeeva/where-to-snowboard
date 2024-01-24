@@ -1,7 +1,7 @@
 import React from "react";
 
 import cn from "classnames";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import facebookImg from "../../assets/img/icons/facebook.png";
 import instagramImg from "../../assets/img/icons/instagram.png";

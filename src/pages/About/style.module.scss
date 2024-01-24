@@ -1,0 +1,87 @@
+// .about__content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 1em;
+//     font-size: 1.1em;
+
+//     .resorts__filter {
+//         width: 100%;
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//         margin-top: 1em;
+
+//         .filter__list {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 0.3em;
+
+//             .list__title {
+//                 font-weight: 700;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 767px) {
+//     .resorts__filter {
+//         display: grid;
+//         grid-template: 1fr 1fr / 1fr 1fr;
+//         row-gap: 0.5em;
+//     }
+// }
+
+// @media screen and (max-width: 391px) {
+//     .about__content {
+//         font-size: 1em;
+//         gap: 0.5em;
+//     }
+//     .resorts__filter {
+//         font-size: 0.8em;
+//         margin-top: 0.5em;
+//     }
+// }
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.1em;
+
+    @media screen and (max-width: 391px) {
+        font-size: 1em;
+        gap: 0.5em;
+    }
+
+    .resorts__filter {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1em;
+
+        @media screen and (max-width: 767px) {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            row-gap: 0.5em;
+        }
+
+        @media screen and (max-width: 391px) {
+            font-size: 0.8em;
+            margin-top: 0.5em;
+        }
+
+        .filter__list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3em;
+
+            .list__title {
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 import cn from "classnames";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 // Компонент Header - шапка сайта
 const Header = () => {
     const header = (

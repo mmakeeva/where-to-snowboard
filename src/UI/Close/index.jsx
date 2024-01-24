@@ -1,6 +1,6 @@
 import React from "react";
 import cn from "classnames";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 const Close = ({ handler }) => {
     const close = (

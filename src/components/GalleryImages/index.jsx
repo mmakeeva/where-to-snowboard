@@ -1,7 +1,7 @@
 import React from "react";
 
 import cn from "classnames";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import Icon from "../../UI/Icon";
 import locImg from "../../assets/img/icons/location.png";
